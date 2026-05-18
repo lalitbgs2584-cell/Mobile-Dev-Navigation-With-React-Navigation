@@ -5,13 +5,19 @@ import { useRoute } from '@react-navigation/native'
 const ProfileScreen = () => {
   const route = useRoute<any>();
 
-  const { name, age, role } = route.params;
+  const { name, age, role } = (route.params as any) ?? {};
 
   return (
     <View>
-      <Text>Name: {name}</Text>
-      <Text>Age: {age}</Text>
-      <Text>Role: {role}</Text>
+      {name ? (
+        <>
+          <Text>Name: {name}</Text>
+          <Text>Age: {age}</Text>
+          <Text>Role: {role}</Text>
+        </>
+      ) : (
+        <Text>Navigate to Details and tap "Profile" to see data here.</Text>
+      )}
     </View>
   )
 }
