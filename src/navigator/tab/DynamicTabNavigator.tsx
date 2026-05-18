@@ -22,7 +22,7 @@ function TabNavigator() {
                         iconName = focused ? 'home' : 'home-outline';
                     } else if (route.name === 'Profile') {
                         iconName = focused ? 'person' : 'person-outline';
-                    } else if (route.name === 'Details') {
+                    } else if (route.name === 'Detail') {
                         iconName = focused
                             ? 'information-circle'
                             : 'information-circle-outline';
@@ -62,7 +62,7 @@ function TabNavigator() {
             />
 
             <Tab.Screen
-                name="Details"
+                name="Detail"
                 component={DetailScreen}
             />
         </Tab.Navigator>

@@ -1,8 +1,6 @@
 import * as React from 'react';
-import DynamicStackNavigator from './src/navigator/stack/DynamicStackNavigator';
-import StaticTabNavigator from './src/navigator/tab/StaticTabNavigator';
-import DynamicTabNavigator from './src/navigator/tab/DynamicTabNavigator';
+import DynamicDrawerNavigator from './src/navigator/drawer/DynamicDrawerNavigator';
 
 export default function App() {
-  return <DynamicTabNavigator />;
+  return <DynamicDrawerNavigator />;
 }

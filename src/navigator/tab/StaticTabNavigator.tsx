@@ -15,7 +15,7 @@ const MyTabs = createBottomTabNavigator({
     screens: {
         Home: HomeScreen,
         Profile: ProfileScreen,
-        Details: DetailScreen
+        Detail: DetailScreen
     },
 });
 
